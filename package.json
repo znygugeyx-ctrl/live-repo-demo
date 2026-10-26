@@ -1,0 +1,9 @@
+{
+  "name": "live-repo-demo",
+  "version": "0.1.0",
+  "description": "A tiny text utility library — the demo repository for Mirasim Live Repo.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
