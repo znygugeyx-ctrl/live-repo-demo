@@ -10,9 +10,9 @@ export function slugify(text) {
 
 /** Cut text to at most `max` characters, ending with an ellipsis when cut. */
 export function truncate(text, max) {
-  const s = String(text);
-  if (s.length <= max) return s;
-  return s.slice(0, Math.max(0, max - 1)) + '…';
+  const chars = Array.from(String(text));
+  if (chars.length <= max) return chars.join('');
+  return chars.slice(0, max).join('') + '…';
 }
 
 /** Count words, treating any run of whitespace as one separator. */

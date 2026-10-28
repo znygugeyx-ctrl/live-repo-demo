@@ -11,6 +11,7 @@ test('slugify', () => {
 test('truncate', () => {
   assert.equal(truncate('abcdef', 10), 'abcdef');
   assert.equal(truncate('abcdef', 4), 'abc…');
+  assert.equal(truncate('ok 👍👍', 4), 'ok …');
 });
 
 test('wordCount', () => {
