@@ -20,3 +20,8 @@ export function wordCount(text) {
   const s = String(text).trim();
   return s ? s.split(/\s+/).length : 0;
 }
+
+/** Upper-case the first letter of every word. */
+export function capitalize(text) {
+  return String(text).replace(/(^|\s)(\p{L})/gu, (_, sp, ch) => sp + ch.toUpperCase());
+}
